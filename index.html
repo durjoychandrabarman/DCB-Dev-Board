@@ -1,11 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Dev Board</title>
+    <style>
+        .body-bg {
+            background-color: rgba(55, 82, 253, 0.2);
+        }
+
+        .linear-gradient {
+            background: linear-gradient(to right,
+                    #3752FD 0%,
+                    #6C7FFA 53%,
+                    #9BA8F8 100%);
+
+        }
+    </style>
 </head>
-<body>
-    
+
+<body id="" class="body-bg">
+    <header class="mb-4">
+        <nav class="mx-auto  max-w-7xl pt-4">
+            <div class="navbar  shadow-sm bg-white rounded-lg">
+                <div class="flex-1">
+                    <div class="flex items-center gap-2 ">
+                        <img class="w-8" src="assets/logo.png" alt="">
+                        <p class="text-2xl">Dev<span class="font-bold">Board</span> </p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="flex justify-between items-center gap-8">
+                        <div class="flex justify-between gap-4 body-bg p-2 rounded-3xl">
+                            <img src="assets/checkbox.png" alt="">
+                            <h2 class="font-bold text-2xl">23</h2>
+                        </div>
+                        <div>
+                            <button class=" btn rounded-full"><img src="assets/theme-btn.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        </header>
+
+        <main>
+            <section class="mx-auto  max-w-7xl grid grid-cols-1 lg:grid-cols-4 gap-6  ">
+                <!-- Left Content -->
+                <div class="lg:col-span-3 space-y-6 space-x-3 bg-base-100 p-4 rounded-lg">
+
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class=" body-bg  shadow-sm grid rounded-lg">
+                            <div class="card-body ">
+                                <div class="flex justify-around items-center">
+                                    <div>
+                                        <img class="bg-white p-2 rounded-full" src="assets/checkbox.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>Task Assigned</p>
+                                        <h2 class="font-bold text-xl">05</h2>
+                                    </div>
+                                    <!-- <button class="btn btn-primary">Completed</button> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" linear-gradient shadow-sm grid rounded-lg col-span-2">
+                            <div class="card-body">
+                                <div class="flex justify-center  gap-3 items-center">
+                                    <div>
+                                        <img class="md:w-14" src="assets/board.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-bold">Discover Something New Today!</p>
+
+                                    </div>
+                                    <!-- <button class="btn btn-primary">Completed</button> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body  body-bg shadow-sm grid rounded-lg">
+                            <div class="flex justify-around items-center">
+                                <div>
+                                    <img class="bg-white p-2 rounded-full" src="assets/calender.png" alt="">
+                                </div>
+                                <div>
+                                    <p>Wed ,</p>
+                                    <h2 class="font-bold text-xl">Jul 28 2025</h2>
+                                </div>
+                                <!-- <button class="btn btn-primary">Completed</button> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Top Cards  -->
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Top Cards 1 -->
+                        <div class=" body-bg  shadow-sm grid rounded-lg">
+                            <div class="card-body space-y-3 ">
+                                <h2 class="bg-gray-50 py-2 px-2 rounded-lg w-20">ShopEase</h2>
+                                <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
+                                <p class="bg-gray-50 p-3 rounded-lg">Debug using Chrome DevTools, check for </p>
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <p class="text-base">Deadline</p>
+                                        <h3 class="font-bold">21 March 2025</h3>
+                                    </div>
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Top Cards  2-->
+                        <div class=" body-bg  shadow-sm grid rounded-lg">
+                            <div class="card-body space-y-3 ">
+                                <h2 class="bg-gray-50 py-2 px-2 rounded-lg w-20">CloudSync</h2>
+                                <h1 class="text-xl font-semibold">Add Dark Mode </h1>
+                                <p class="bg-gray-50 p-3 rounded-lg">Store the user's preference in localStorage, update
+                                    CSS </p>
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <p class="text-base">Deadline</p>
+                                        <h3 class="font-bold">21 March 2025</h3>
+                                    </div>
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Top Cards 3  -->
+                        <div class=" body-bg  shadow-sm grid rounded-lg">
+                            <div class="card-body space-y-3 ">
+                                <h2 class="bg-gray-50 py-2 px-2 rounded-lg w-20">SwiftPay</h2>
+                                <h1 class="text-xl font-semibold">Optimize Home page </h1>
+                                <p class="bg-gray-50 p-3 rounded-lg">Debug using Chrome DevTools, check for </p>
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <p class="text-base">Deadline</p>
+                                        <h3 class="font-bold">21 March 2025</h3>
+                                    </div>
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- bottom cards 1 -->
+                        <div class=" body-bg  shadow-sm grid rounded-lg">
+                            <div class="card-body space-y-3 ">
+                                <h2 class="bg-gray-50 py-2 px-2 rounded-lg w-20">Meta</h2>
+                                <h1 class="text-xl font-semibold">Add new emoji 🤲 </h1>
+                                <p class="bg-gray-50 p-3 rounded-lg">Debug using Chrome DevTools, check for </p>
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <p class="text-base">Deadline</p>
+                                        <h3 class="font-bold">21 March 2025</h3>
+                                    </div>
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bottom cards 2 -->
+                        <div class=" body-bg  shadow-sm grid rounded-lg">
+                            <div class="card-body space-y-3 ">
+                                <h2 class="bg-gray-50 py-2 px-2 rounded-lg w-24">Google LLC</h2>
+                                <h1 class="text-xl font-semibold">Integrate OpenAI API </h1>
+                                <p class="bg-gray-50 p-3 rounded-lg">Debug using Chrome DevTools, check for</p>
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <p class="text-base">Deadline</p>
+                                        <h3 class="font-bold">21 March 2025</h3>
+                                    </div>
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bottom cards 3 -->
+                        <div class=" body-bg  shadow-sm grid rounded-lg">
+                            <div class="card-body space-y-3 ">
+                                <h2 class="bg-gray-50 py-2 px-2 rounded-lg w-20">Glassdoar</h2>
+                                <h1 class="text-xl font-semibold">Improve Job searching</h1>
+                                <p class="bg-gray-50 p-3 rounded-lg">Debug using Chrome DevTools, check for </p>
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <p class="text-base">Deadline</p>
+                                        <h3 class="font-bold">21 March 2025</h3>
+                                    </div>
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Activity Log -->
+                <div class="card bg-base-100 shadow p-6">
+                    <div class="grid justify-center gap-4 mb-10">
+                        <div class="flex justify-center gap-2 items-center">
+                            <img src="assets/activity.png" alt="">
+                            <h1 class="font-semibold text-lg">Activity Log</h1>
+                        </div>
+                        <button class="btn btn-primary  text-lg">Clear History</button>
+                    </div>
+                    
+                </div>
+
+            </section>
+        </main>
+
 </body>
+
 </html>
