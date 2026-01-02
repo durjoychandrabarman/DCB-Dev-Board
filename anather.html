@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>DavBoard</title>
+    <style>
+        .body-bg {
+            background-color: rgba(102, 120, 238, 0.2);
+        }
+
+        .comment {
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            color: #111827;
+            border-radius: 10px;
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body class="body-bg">
+    <header class="mb-4">
+        <nav class="mx-auto  max-w-7xl pt-4 ">
+            <div class="navbar  shadow-sm bg-white rounded-lg">
+                <div class="flex-1">
+                    <div class="flex items-center gap-2 ">
+                        <img class="w-8" src="assets/logo.png" alt="">
+                        <p class="text-2xl">Dev<span class="font-bold">Board</span> </p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="flex justify-between items-center gap-6">
+                        <div>
+                            <!-- <button id="colorBtn" class=" btn rounded-full"></button> -->
+                            <button id="back-btn" class="btn btn-primary">Back to Desk</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main class="mx-auto  max-w-7xl">
+        <h1 class="text-center font-bold text-3xl mb-5">Blogs</h1>
+        <div class=" space-y-4">
+            <div class="comment">
+                <h1 class="font-bold text-lg">Question-1: What are the different ways to select an element in the DOM?
+                </h1>
+                <p>
+                <ul class="text-2 font-serif mt-2">
+                    <li>getElementById() : একটি নির্দিষ্ট id থাকা element ধরতে ব্যবহার হয় </li>
+                    <li> getElementsByTagName() একই tag (div, p ইত্যাদি) ধরতে</li>
+                    <li>querySelector() CSS selector ব্যবহার করে প্রথম matching element ধরে </li>
+                    <li>querySelectorAll() সব matching element ধরে </li>
+                </ul>
+                </p>
+
+            </div>
+            <div class="comment">
+                <h1 class="font-bold text-lg ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                <ul class="text-2 font-serif mt-2">
+                    <li>innerHTML এটি কোনো element এর ভেতরের লেখা HTML সহ দেখায় বা পরিবর্তন করে। HTML ট্যাগ কাজ করে।
+                    </li>
+                    <li> innerText এটি শুধু যে লেখা স্ক্রিনে দেখা যায়, সেটুকুই দেয় । CSS দিয়ে লুকানো লেখা দেখায় না।</li>
+                    <li>textContent : এটি element এর ভেতরের সব লেখা দেয়, এমনকি লুকানো লেখা থাকলেও । HTML ট্যাগ কাজ করে
+                        না।/li>
+                </ul>
+            </div>
+            <div class="comment">
+                <h1 class="font-bold text-lg "> Question-3: What is event delegation in the DOM?</h1>
+                <p class="text-2 font-serif mt-2">
+                    Event Delegation হলো এমন একটি পদ্ধতি যেখানে
+                    একাধিক child element এর জন্য আলাদা আলাদা event না দিয়ে, parent element এ একটাই event ব্যবহার করা হয়।
+                    এর সুবিধা হলো— কোড কম হয় মেমোরি কম লাগে , নতুন করে যোগ করা element এর উপরও event কাজ করে ।
+                </p>
+            </div>
+            <div class="comment">
+                <h1 class="font-bold text-lg ">Question-4: What is event bubbling in the DOM?</h1>
+                <p class="text-2 font-serif mt-2">
+                    Event Bubbling হলো এমন একটি প্রক্রিয়া যেখানে ,
+                    কোনো child element এ event ঘটলে, সেটি ধাপে ধাপে parent element এর দিকে উপরে উঠতে থাকে ।
+
+                    অর্থাৎ event এর প্রবাহ হয় — Child → Parent → Body → Document এটাই Event Bubbling।
+                </p>
+            </div class="comment">
+            <div class="comment">
+                <h1 class="font-bold text-lg ">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                <p class="text-2 font-serif mt-2">Element তৈরি করা মানে JavaScript ব্যবহার করে নতুন HTML element বানানো ,
+
+                    Element যোগ করা মানে সেই element কে ওয়েব পেজে দেখানো ,
+
+                    Element মুছা মানে পেজ থেকে কোনো element সরিয়ে ফেলা</p>
+            </div>
+
+
+        </div>
+
+    </main>
+    <script>
+        document.getElementById('back-btn').addEventListener('click',function(){
+            window.location.href = "./index.html"
+        })
+    </script>
+</body>
+
+</html>
